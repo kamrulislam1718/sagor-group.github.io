@@ -1,0 +1,646 @@
+/*
+    Template Name: Sagor group electronics ltd.
+    Description: This is a HTML template for Sagor group electronics ltd.
+    Author: Md. Nazmul Huda
+    Version: 1.0
+    Design and Developed by: Md. Nazmul Huda
+    NOTE: This is main style sheet of template,
+    This file contains the styling for the actual Template.
+    Please do not change anything here! write in a custom.css file if required!
+*/
+
+/* ==========================================================================
+   header
+   ========================================================================== */
+/* header top bar */
+.header-top {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.header-top-info {}
+.header-top-info p {
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 0 25px 0 0;
+}
+.header-top-info p i {
+    margin-right: 3px;
+}
+.header-top-social {
+    text-align: right;
+}
+.header-top-social ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.header-top-social ul li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+.header-top-social ul li a {
+    display: block;
+}
+
+/* main header */
+.header {
+    padding: 22px 0;
+}
+.header .brand-logo {
+    display: inline-block;
+    float: left;
+}
+.header .brand-logo a {
+    display: block;
+}
+.header .brand-logo a img {
+    height: 36px;
+    width: auto;
+}
+.header .primary-menu {
+    text-align: right;
+}
+.header .primary-menu ul {
+    display: block;
+}
+.header .primary-menu ul li {
+    display: inline-block;
+    margin-left: 25px;
+    line-height: 36px;
+}
+.header .primary-menu ul li a {
+    display: block;
+}
+.header .primary-menu ul li ul {
+    display: none !important;
+}
+
+
+/* ==========================================================================
+   category bar
+   ========================================================================== */
+.product-category-bar {
+    background-color: #cb2d22;
+}
+/* category menu */
+.product-category-menu {
+    color: #fff;
+    text-align: center;
+}
+.product-category-menu ul {
+    display: block;
+}
+.product-category-menu ul li {
+    position: relative;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+}
+.product-category-menu ul li a {
+    display: block;
+    padding: 15px;
+}
+.product-category-menu ul li.has-children > a {
+    padding-right: 30px;
+}
+.product-category-menu ul li.has-children > a::after {
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f107";
+    top: 0;
+    right: 15px;
+    line-height: 50px;
+}
+/* category menu dropdown */
+.product-category-menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: #fff;
+    color: #424242;
+    text-align: left;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.product-category-menu ul li ul li {
+    display: block;
+    font-size: 13px;
+    border-bottom: 1px solid #ddd;
+}
+.product-category-menu ul li ul li:last-child {
+    border-bottom: none;
+}
+.product-category-menu ul li ul li a {
+    padding: 10px 15px;
+}
+.product-category-menu ul li ul li.has-children > a::after {
+    font-family: FontAwesome;
+    content: "\f105";
+    line-height: 40px;
+}
+.product-category-menu ul li ul ul {
+    top: 0;
+    left: 100%;
+}
+/* category menu hover */
+.product-category-menu ul li:hover > ul {
+    transform: scaleY(1);
+    visibility: visible;
+    opacity: 1;
+}
+.product-category-menu ul li a:hover,
+.product-category-menu ul li a:focus {
+    color: #fff;
+}
+.product-category-menu ul li ul li a:hover,
+.product-category-menu ul li ul li a:focus {
+    color: #cb2d22;
+}
+
+
+/* ==========================================================================
+   hero area
+   ========================================================================== */
+.hero-area {
+    padding: 2px 0;
+}
+.hero-sliders {}
+
+/* owl nav */
+.hero-sliders .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.hero-sliders .owl-nav div {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.hero-sliders .owl-nav .owl-prev {
+    float: left;
+}
+.hero-sliders .owl-nav .owl-next {
+    float: right;
+}
+
+/* owl dots */
+.hero-sliders .owl-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    line-height: 1;
+    text-align: center;
+}
+.hero-sliders .owl-dots .owl-dot {    
+    display: inline-block;
+    background: transparent;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.hero-sliders .owl-dots .owl-dot.active {
+    background: #fff;
+}
+
+
+/* ==========================================================================
+   special features
+   ========================================================================== */
+.special-features {
+    padding: 17px 0 0 0;
+}
+.special-feature-item {
+    border: 1px #e8e8e8 solid;
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.special-feature-item .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 36px;
+    font-size: 36px;
+    margin-right: 5px;
+}
+.special-feature-item i {
+    color: #333;
+}
+.special-feature-item h4 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: top;
+    font-weight: 600;
+}
+.special-feature-item p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+
+/* ==========================================================================
+   features products
+   ========================================================================== */
+.feature-products {}
+.feature-product-list {}
+.feature-product-item {
+    background-color: #fff;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+}
+.feature-product-item a {
+    display: block;
+}
+.feature-product-item .thumb {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.feature-product-item .thumb > span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/icons/discount-icon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-weight: 500;    
+    line-height: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.feature-product-item .thumb img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.feature-product-item .intro {
+    text-align: center;
+    padding: 20px 0;
+}
+.feature-product-item .intro .title {
+    display: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.3s ease-out 0s;
+}
+.feature-product-item .intro .cat {
+    display: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.feature-product-item .intro .price {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #cb2d22;
+    margin: 0;
+}
+/* product hover */
+.feature-product-item:hover {
+    box-shadow: 0px 1px 1px 1px rgba(143,143,143,0.5);
+    box-shadow: 2px 2px 4px rgba(0,0,0,.13);
+}
+.feature-product-item:hover .thumb {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.feature-product-item:hover .intro .title {
+    color: #cb2d22;
+}
+
+/* ==========================================================================
+   latest post
+   ========================================================================== */
+.latest-posts {}
+.latest-post-item {
+    margin-bottom: 30px;
+}
+.latest-post-item .thumb {
+    overflow: hidden;
+}
+.latest-post-item .thumb a {
+    display: block;
+}
+.latest-post-item .thumb a img {
+    transform: scale(1);
+}
+.latest-post-item .intro {
+    padding-top: 15px;
+}
+.latest-post-item .intro .title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+.latest-post-item .intro .title a {
+    display: block;
+}
+.latest-post-item .intro .meta {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 8px;
+    color: #333;
+}
+.latest-post-item .intro .meta ul {
+    display: block;
+}
+.latest-post-item .intro .meta ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+.latest-post-item .intro .desc {
+    font-size: 13px;
+    line-height: 20px;
+}
+.latest-post-item .intro .read-more {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #cb2d22;
+    padding: 0 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* latest post hover */
+.latest-post-item .thumb a:hover img {
+    transform: scale(1.2);
+}
+.latest-post-item .intro .read-more:hover {
+    background: #cb2d22;
+    color: #fff;
+}
+
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+.footer {
+    overflow: hidden;
+    background: #333;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #999;
+    padding-top: 60px;
+}
+.footer p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #999;
+}
+.footer h4.heading {
+    margin: 0px 0 20px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* footer about */
+.footer-about {
+    margin-bottom: 35px;
+}
+.footer-about .footer-social {
+    padding-top: 12px;
+}
+.footer-about .footer-social ul {
+    display: block;
+}
+.footer-about .footer-social ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer-about .footer-social ul li a {
+    background-color: transparent;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 3px;
+    text-align: center;
+}
+.footer-about .footer-social ul li a:hover,
+.footer-about .footer-social ul li a:focus {
+    background-color: #cb2d22;
+    color: #fff;
+    border-color: #cb2d22;
+}
+/* footer menu */
+.footer-menu {
+    margin-bottom: 35px;
+}
+.footer-menu ul {
+    display: block;
+}
+.footer-menu ul li {
+    display: block;
+    padding: 3px 0;
+}
+.footer-menu ul li a {
+    display: inline-block;
+}
+/* footer contact */
+.footer-contact {
+    margin-bottom: 35px;
+}
+.footer-contact .intro {}
+.footer-contact .intro {}
+.footer-contact .contact-item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 4px;
+}
+.footer-contact .contact-item i {
+    position: absolute;
+    left: 0;
+    line-height: 22px;
+}
+/* footer copyright */
+.footer-copyright {
+    background-color: #222;
+    padding: 11px 0;
+}
+.footer-copyright p,
+.footer-copyright .copyright-text {
+    font-size: 13px;
+    line-height: 23px;
+    color: #999;
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   page haeading
+   ========================================================================== */
+.page-heading {
+    position: relative;
+    background-image: url(../images/page-header-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.page-heading::after {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.page-heading-content {
+    padding: 60px 0;
+}
+.page-heading-content .page-title {
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+.page-heading-content .breadcumb {
+    font-size: 16px;
+    color: #fff;
+}
+.page-heading-content .breadcumb li {
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+.page-heading-content .breadcumb li:last-child {    
+    margin-right: 0;
+}
+.page-heading-content .breadcumb li::after {
+    position: absolute;
+    content: "/";
+    padding: 0 8px;
+}
+.page-heading-content .breadcumb li:last-child::after {    
+    display: none;
+}
+
+
+/* ==========================================================================
+   team member
+   ========================================================================== */
+.team-member-list {
+    padding-top: 100px;
+}
+.team-member {
+    background: #f7f7f7;
+    border: 1px #e8e8e8 solid;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.team-member .thumb {
+    margin-bottom: 20px;
+}
+.team-member .thumb img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.team-member .intro {}
+.team-member .intro h5 {
+    margin-bottom: 6px;
+}
+
+
+/* ==========================================================================
+   ceo message
+   ========================================================================== */
+.ceo-message {
+    padding-top: 100px;
+}
+.ceo-thumb {
+    border: 3px #e8e8e8 solid;
+}
+.ceo-speech .name {
+    margin: 25px 0 6px;
+}
+.ceo-speech .designation {
+    margin: 0;
+}
+
+/* ==========================================================================
+   contact page
+   ========================================================================== */
+.contact-info h4 {
+    margin: 25px 0 6px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.contact-info p {
+    margin: 0;
+}
+
+.contact-form form button[type="submit"] {
+    font-size: 13px;
+    color: #fff;
+    background-color: #cb2d22;
+    padding: 0 30px;
+    line-height: 39px;
+    border: 1px solid #cb2d22;
+    border-radius: 0;
+}
+.contact-form form button[type="submit"]:hover,
+.contact-form form button[type="submit"]:focus {
+    background-color: #a02018;
+    border-color: #a02018;
+    color: #fff;
+}
